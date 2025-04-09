@@ -269,3 +269,71 @@ h1 {
     flex-direction: row-reverse;
 }
 
+/* SECTION3 */
+
+.section3 {
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+    position: relative;
+}
+
+.students {
+    position: absolute;
+    top: 77px;
+    width: 300px;
+    height: 50px;
+    background-color: rgb(246, 240, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    border: 2px solid #e6e9ee;
+    align-self: center;
+    gap: 10px;
+}
+
+.team {
+    width: 30px;
+    height: 30px;
+}
+
+.textt {
+    font-weight: 600;
+}
+
+.students-cert {
+    align-self: center;
+    height: 300px;
+    width: 1300px;
+    border-radius: 10px;
+    border: 2px solid #e6e9ee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cards {
+    height: 160px;
+    width: 237px;
+    border: 2px solid #e6e9ee;
+    background-color: rgb(246, 240, 254);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.num {
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.num2 {
+    font-size: 30px;
+    color: gray;
+}
