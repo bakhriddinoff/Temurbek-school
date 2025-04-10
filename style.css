@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
 }
 
 .section1 {
@@ -277,7 +278,6 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 100vh;
     position: relative;
 }
 
@@ -348,10 +348,10 @@ h1 {
 /* SECTION4 */
 
 .section4 {
+    padding-top: 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 200vh;
 }
 
 .headd {
@@ -388,10 +388,11 @@ h1 {
 .heading2 {
     font-size: 50px;
     font-weight: 500;
+    padding-top: 80px;
 }
 
 .cards-wrapper {
-    margin-top: 100px;
+    margin-top: 50px;
     display: flex;
     gap: 50px;
 }
@@ -440,4 +441,9 @@ h1 {
 .imgC {
     width: 25px;
     height: 25px;
+}
+
+.shape {
+    width: 20px;
+    height: 20px;
 }
