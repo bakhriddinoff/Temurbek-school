@@ -197,6 +197,7 @@ h1 {
 .text3 {
     color: rgb(92, 92, 92);
     font-size: 18px;
+    font-weight: 500;
 }
 
 .imgs {
@@ -211,6 +212,7 @@ h1 {
 }
 
 .about {
+    align-self: flex-start;
     width: 150px;
     height: 50px;
     border: 1px solid #939191;
@@ -449,6 +451,7 @@ h1 {
 }
 
 .horizontal-scroll-container {
+    margin-top: 50px;
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -457,6 +460,8 @@ h1 {
     max-width: 1300px;
     align-self: center;
     justify-self: center;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
   
 .card {
@@ -475,10 +480,6 @@ h1 {
     border: 2px solid #e6e9ee;
 }
 
-.card:hover {
-    opacity: 0.5;
-    transition: all 0.6s;
-}
 
 .faq {
     font-size: 18px;
@@ -543,18 +544,12 @@ h1 {
 
 .section6 {
     padding-top: 100px;
-    height: 200vh;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
-
-
-
-
-.section4 {
+.faq-section {
     justify-self: center;
     max-width: 1240px;
     display: flex;
@@ -574,7 +569,6 @@ h1 {
 .faq-wrapper {
     display: flex;
     flex-direction: column;
-    padding-bottom: 100px;
 }
 
 .faq {
@@ -612,10 +606,11 @@ h1 {
 .toggle-answer {
     max-height: 0;
     overflow: hidden;
-    font-size: 20px;
-    color: #a8a6a6;
+    font-size: 18px;
+    color: rgb(190, 133, 255);
     transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
     padding-left: 30px;
+    font-weight: normal;
 }
 
 .faq.active .toggle-answer {
@@ -623,15 +618,7 @@ h1 {
     padding-top: 20px;
 }
 
-.btn1 {
-    width: 150px;
-    height: 40px;
-    background-color: orange;
-    border: unset;
-    border-radius: 5px;
-    font-size: 18px;
-    font-weight: bold;
-    color: white;
+.faq-section button {
     align-self: center;
 }
 
@@ -641,14 +628,14 @@ h1 {
 }
 
 
-.heading {
-    font-family: 'Gill Sans', 'Gill San s MT', Calibri, 'Trebuchet MS', sans-serif;
+.headingg {
     text-align: center;
-    font-size: 35px;
-    color: orange;
+    font-size: 50px;
+    color: black;
+    padding-top: 50px;
 }
 
-.text1 {
+.texttjon {
     font-size: 20px;
     color: gray;
     text-align: center;
@@ -660,24 +647,65 @@ h1 {
     padding-left: 30px;
     padding-top: 10px;
     font-size: 25px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.spn1 {
-    color: orange;
+.spn11 {
+    color: rgb(159, 84, 247);
 }
 
-h1  {
-    font-size: 40px;
-}
 
 .btn:hover {
     background-color: black;
     transition:background-color 0.5s ease-in-out; 
 }
 
-.imgs {
+.imgss {
     transition: transform 0.2s ease;
+}
+
+.fikrlar {
+    font-size: 20px;
+}
+
+.square1 {
+    width: 215px;
+    height: 75px;
+}
+
+
+.square {
+    width: 205px;
+    height: 65px;
+}
+
+button {
+    transition: all 1s ease-out;
+}
+
+/* SECTION7 */
+
+.section7 {
+    height: 200vh;
+    padding-top: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: #c899fe;
+    border-radius: 20px;
+}
+
+.img1 {
+    width: 50px;
+    height: 50px;
 }
 
 @media (max-width: 1000px) {
