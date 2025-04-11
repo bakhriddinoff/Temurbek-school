@@ -708,6 +708,26 @@ button {
     height: 50px;
 }
 
+.logo1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logoN {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.address {
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 500;
+    color: gray;
+}
+
 @media (max-width: 1000px) {
     .faq-wrapper {
         width: 80%;
