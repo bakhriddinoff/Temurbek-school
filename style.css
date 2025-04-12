@@ -708,6 +708,10 @@ button {
     border-radius: 20px;
 }
 
+.logo1:hover {
+    opacity: 0.5;
+    transition: all 0.5s;
+}
 
 .img1 {
     width: 50px;
@@ -737,6 +741,83 @@ button {
     font-size: 22px;
     font-weight: 500;
     color: gray;
+}
+
+/* FOOTER */
+
+.footer {
+    margin-top: 100px;
+}
+
+.logoF {
+    width: 100px;
+    height: 100px;
+}
+
+.footer1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.logoF-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.spn1F {
+    font-size: 40px;
+}
+
+.text4 {
+    font-size: 35px;
+    font-weight: 600;
+    padding-bottom: 20px;
+}
+
+.text5 {
+    font-size: 25px;
+    font-weight: 500;
+    color: gray;
+}
+
+.linkF-wrapper {
+    display: flex;
+    gap: 80px;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.linkF {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 45px;
+    background-color: #f6f7f9;
+    border: 1px solid #dfdfdf;
+    border-radius: 50px;
+    font-size: 22px;
+}
+
+.linkF:hover, .linkF a:hover {
+    color: rgb(159, 84, 247);
+    transition: all 0.5s;
+}
+
+.linkF2 {
+    width: 200px;
+}
+
+.linkF a {
+    color: rgb(89, 88, 88);
+    text-decoration: none;
+}
+
+.apps {
+    width: 100px;
+    height: 100px;
 }
 
 @media (max-width: 1000px) {
