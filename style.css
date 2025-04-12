@@ -816,8 +816,8 @@ button {
 }
 
 .apps {
-    width: 100px;
-    height: 100px;
+    width: 40px;
+    height: 40px;
 }
 
 @media (max-width: 1000px) {
