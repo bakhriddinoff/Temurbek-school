@@ -693,6 +693,12 @@ button {
     justify-content: center;
 }
 
+.logos-wrapper {
+    margin-top: 30px;
+    display: flex;
+    gap: 50px;
+}
+
 .logo-item {
     display: flex;
     justify-content: center;
@@ -703,9 +709,14 @@ button {
     border-radius: 20px;
 }
 
+
 .img1 {
     width: 50px;
     height: 50px;
+}
+
+.insta {
+    width: 70px;
 }
 
 .logo1 {
@@ -722,7 +733,6 @@ button {
 }
 
 .address {
-    text-decoration: none;
     font-size: 22px;
     font-weight: 500;
     color: gray;
