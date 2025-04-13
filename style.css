@@ -841,21 +841,15 @@ button {
 }
 
 @media (max-width:1300px) {
-    *,html {
-        font-size: 20px;
-    }
-    body {
-        font-size: 20px;
-    }
     .links {
         font-size: 16px;
     }
     .spn1 {
-        font-size: 20px;
+        font-size: 16px;
     }
 
     .cards-item {
-        width: 300px;
+        width: 30vw;
         height: 150px;
     }
     .headingC {
@@ -903,6 +897,54 @@ button {
         width: 400px;
         height: 350px;
     }
+    .btn {
+        width: 120px;
+        height: 35px;
+        font-size: 13px;
+    }
+    .btn2 {
+        font-size: 12px;
+        width: 150px;
+        height: 50px;
+    }
+    .header-wrapper {
+        gap: 30px;
+    }
+    h1 {
+        font-size: 55px;
+    }
+    .card {
+        width: 320px;
+        height: 280px;
+    }
+    .picture {
+        width: 30px;
+        height: 30px;
+    }
+    .student {
+        width: 25px;
+        height: 25px;
+    }
+    .x {
+        width: 40px;
+        height: 40px;
+    }
+    .axad {
+        margin-top: 0;
+    }
+    .name2 {
+        font-size: 16px;
+    }
+    .logo-item {
+        width: 80px;
+        height: 80px;
+    }
+    .address, .logoN {
+        font-size: 18px;
+    }
+    .textt {
+        font-size: 18px;
+    }
 
 }
 
@@ -917,9 +959,139 @@ button {
     .faq {
         max-width: 700px;
     }
+    .heroes {
+        max-width: 900px;
+    }
+    .text3 {
+        font-size: 0.8rem;
+    }
+    .heading {
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .imgs {
+        height: auto;
+        max-width: 400px;
+    }
+    .question h3 {
+        font-size: 20px;
+    }
+    .headingg, .heading2 {
+        font-size: 30px;
+    }
+    .texttjon {
+        font-size: 18px;
+    }
+    .text4 {
+        font-size: 20px;
+    }
+    .text5 {
+        font-size: 18px;
+    }
+    .linkF-wrapper {
+        gap: 40px;
+    }
+    .linkF {
+        width: 100px;
+    }
+    .linkF2 {
+        width: 130px;
+    }
+    .linkF a {
+        font-size: 16px;
+    }
+    .copyrightt {
+        font-size: 16px ;
+    }
+    .f-logos {
+        gap: 5px;
+    }
+    .apps {
+        width: 30px;
+        height: 30px;
+    }
+    .students-cert {
+        max-width: 90vw;
+    }
+    .cards-wrapper {
+        gap: 20px;
+    }
+    .cards-item {
+        max-width: 400px;
+    }
+    .card {
+        width: 320px;
+        height: 250px;
+    }
+    .feedback, .name2, .data  {
+        font-size: 14px;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    .text2 {
+        font-size: 16px;
+    }
+    .horizontal-scroll-container {
+        max-width: 90vw;
+    }
+    .cards {
+        width: 80vw;
+    }
+    .num {
+        font-size: 2rem;
+    }
+    .num2 {
+        font-size: 1.5rem;
+    }
+    .headingC {
+        font-size: 1rem;
+    }
+    .textC {
+        font-size: 0.8rem;
+    }
+    .logo-item {
+        width: 70px;
+        height: 70px;
+    }
+    .img1 {
+        width: 30px;
+        height: 30px;
+    }
+    .insta {
+        width: 40px;
+    }
+    .logoN, .address {
+        font-size: 1rem;
+    }
+    .about {
+        width: 100px;
+        height: 40px;
+        font-size: 0.7rem;
+    }
+    .us {
+        width: 20px;
+        height: 20px;
+    }
+    ul {
+        gap: 10px;
+    }
+    .links {
+        font-size: 0.8rem;
+    }
+    .btn2 {
+        width: 120px;
+        height: 40px;
+        font-size: 10px;
+    }
+    .strelka {
+        width: 15px;
+        height: 15px;
+    }
+
 }
 
-@media (max-width: 750px) {
+@media (max-width: 850px) {
     .faq-wrapper {
         width: 80%;
         display: flex;
@@ -930,6 +1102,12 @@ button {
     }
     .question h3 {
         font-size: 18px;
+    }
+    .heading {
+        font-size: 14px;
+    }
+    .text3 {
+        font-size: 10px;
     }
 }
 
