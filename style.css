@@ -1048,6 +1048,9 @@ button {
     .textt {
         font-size: 18px;
     }
+    .cards-wrapper {
+        justify-content: center;
+    }
 
 }
 
@@ -1191,6 +1194,11 @@ button {
         width: 15px;
         height: 15px;
     }
+    .cards-wrapper {
+        flex-wrap: wrap;    
+        align-items: center;
+        justify-content: center;
+    }
 
 }
 
@@ -1219,7 +1227,7 @@ button {
         font-size: 0.8em;
     }
     .cards-item {
-        height: auto;
+        height: 120px;
     }
     .textC {
         font-size: 0.5em;
@@ -1236,9 +1244,6 @@ button {
     }
     .logos-wrapper {
         justify-content: center;
-        flex-wrap: wrap;
-    }
-    .cards-wrapper {
         flex-wrap: wrap;
     }
     .headd {
@@ -1260,7 +1265,11 @@ button {
         padding-top: 150px;
     }
     .students-cert {
-        height: 230px;
+        height: auto;
+        flex-wrap: wrap;
+    }
+    .cards {
+        margin-top: 40px;
     }
     .copyrightt {
         font-size: 12px;
@@ -1318,9 +1327,24 @@ button {
         flex-wrap: wrap;
         justify-content: center;
     }
+    .text4 {
+        text-align: center;
+    }
+    .section4 {
+        padding-top: 80px;
+    }
+    .shaxsiy {
+        margin-left: 20px;
+    }
 }
 
 @media (max-width: 500px) {
+    .headingg {
+        font-size: 25px;
+    }
+    .texttjon {
+        font-size: 13px;
+    }
     .faq-wrapper {
         width: 80%;
         display: flex;
@@ -1336,7 +1360,7 @@ button {
         font-size: 14px;
     }
     .section7 {
-        margin-top: 230px;
+        margin-top: 100px;
     }
     .text5 {
         text-align: center;
@@ -1346,5 +1370,53 @@ button {
     }
     .toggle-answer {
         font-size: 12px;
+    }
+    .heading2 {
+        text-align: center;
+    }
+    .card {
+        width: 200px;
+        height: 200px;
+    }
+    .feedback {
+        font-size: 13px;
+    }
+    .data {
+        height: 30px;
+        width: 120px;
+    }
+    .ozodbek {
+        gap: 8px;
+    }
+}
+
+@media (max-width: 470px) { 
+    .copyrightt {
+        font-size: 8px;
+    }
+    .apps {
+        width: 20px;
+        height: 20px;
+    }
+    .logo {
+        width: 50px;
+        height: 50px;
+    }
+    .linkF-wrapper {
+        margin-bottom: 0;
+    }
+    .imgs {
+        max-width: 300px;
+    }
+    .text3 {
+        max-width: 300px;
+        text-align: center;
+    }
+    .left-hero {
+        height: 220px;
+    }
+    .teachers {
+        max-width: 300px;
+        height: 270px;
     }
 }
