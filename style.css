@@ -11,7 +11,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 100vh;
   }
   
 
@@ -853,7 +852,6 @@ button {
     text-align: center;
     font-size: 3rem;
     transition: .3s ease;
-    height: 500px;
 }
 .off-screen-menu.active {
     right: 0;
@@ -913,7 +911,7 @@ button {
 .ham-menu-ul li > a {
     color: rgb(159, 84, 247);
     text-transform: capitalize;
-    font-size: 30px;
+    font-size: 22px;
 
 }
 
@@ -1283,6 +1281,9 @@ button {
     .texttjon {
         padding-top: 10px;
     }
+    .text5 {
+        text-align: center;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1336,6 +1337,9 @@ button {
     .shaxsiy {
         margin-left: 20px;
     }
+    .footer1 {
+        margin-bottom: 40px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -1387,6 +1391,10 @@ button {
     }
     .ozodbek {
         gap: 8px;
+    }
+    .apps {
+        width: 20px;
+        height: 20px;
     }
 }
 
