@@ -12,7 +12,13 @@
 .language-selector {
     position: relative;
     display: inline-block;
-    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 50px;
+}
+
+.imgL {
+    width: 35px;
+    height: 20px;
 }
 
 .language-selector button {
@@ -40,6 +46,9 @@
 .language-dropdown li {
     padding: 10px;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .language-dropdown li:hover {
@@ -48,6 +57,15 @@
 
 .hidden {
     display: none;
+}
+
+#current-lang {
+    border: 2px solid rgb(190, 133, 255);
+    border-radius: 5px;
+}
+
+#current-lang:hover {
+    background-color: rgb(190, 133, 255);
 }
 
 
