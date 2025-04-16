@@ -549,12 +549,24 @@ h1 {
     height: 30px;
 }
 
+.kurslar1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 40px;
+}
+
 .kurs-card {
     width: 400px;
     height: 250px;
     border: 2px solid rgb(159, 84, 247);
     border-radius: 10px;
     position: relative;
+}
+
+.kurs-card:hover {
+    box-shadow: 0 4px 12px black;
+    transition: all 0.5s;
 }
 
 .backblur {
@@ -568,8 +580,11 @@ h1 {
     z-index: 0;
 }
 
-.backblur:hover {
-    display: none;
+
+.kurs-card:hover .backblur {
+    transition: all 0.5s;
+    box-shadow: 10px10px 4px 12px rgba(0,0,0,0.1);
+    filter: blur(0);
 }
 
 .subject {
