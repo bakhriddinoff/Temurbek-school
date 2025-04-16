@@ -103,6 +103,7 @@ li {
 
 .links:hover {
     color: rgb(159, 84, 247);
+    padding-bottom: 30px solid blue;
 }
 
 .background {
@@ -535,6 +536,59 @@ h1 {
     margin-top: 0px;
 }
 
+/* KURSLAR */
+
+.kurslar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.english {
+    width: 30px;
+    height: 30px;
+}
+
+.kurs-card {
+    width: 400px;
+    height: 250px;
+    border: 2px solid rgb(159, 84, 247);
+    border-radius: 10px;
+    position: relative;
+}
+
+.backblur {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(6px);
+    z-index: 0;
+}
+
+.backblur:hover {
+    display: none;
+}
+
+.subject {
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.kurst {
+    font-weight: 600;
+}
 
 /* SECTION6 */
 
@@ -913,6 +967,21 @@ button {
     text-transform: capitalize;
     font-size: 22px;
 
+}
+
+.teachers:hover,.imgs:hover {
+    opacity: 0.5;
+    transition: all 0.6s;
+}
+
+
+/* KURSLAR */
+
+.kurslar {
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 @media (max-width:850px) {
