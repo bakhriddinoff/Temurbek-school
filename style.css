@@ -76,6 +76,10 @@ li {
     align-items: center;
 }
 
+.btn-wrapper .btn:hover {
+    background-color: rgb(159, 84, 247);
+}
+
 .btn {
     width: 150px;
     height: 50px;
@@ -93,7 +97,7 @@ li {
 }
 
 .btn:hover {
-    background-color: rgb(159, 84, 247);
+    background-color: blue;
     color: white;
     transition: all 0.5s;
 }
