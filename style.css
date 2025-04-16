@@ -6,6 +6,51 @@
     scroll-behavior: smooth;
 }
 
+/* LANGUAGE SELECTOR */
+
+
+.language-selector {
+    position: relative;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.language-selector button {
+    background-color: transparent;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    color: #333;
+}
+
+.language-dropdown {
+    position: absolute;
+    background-color: white;
+    list-style: none;
+    padding: 0;
+    margin: 5px 0 0 0;
+    border: 1px solid #ddd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 100;
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.language-dropdown li {
+    padding: 10px;
+    cursor: pointer;
+}
+
+.language-dropdown li:hover {
+    background-color: #f2f2f2;
+}
+
+.hidden {
+    display: none;
+}
+
+
 .section1 {
     background-image: url('imgs/background.png');
     background-size: cover;
