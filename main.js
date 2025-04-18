@@ -49,10 +49,23 @@ langBtns.forEach((langBtn, index) => {
 items.forEach(item => {
     item.addEventListener('click', () => {
         const selectedLang = item.getAttribute('data-lang');
+        const flagImage = item.querySelector('.imgL'); // Get the flag image element
 
         // Faqat birinchi langBtn'ni yangilayapti, agar sizga kerak bo‘lsa barchasiga yangilasa, forEach qilib yozamiz
         langBtns.forEach(langBtn => {
-            langBtn.textContent = item.textContent + " ⌄";
+            // Clear previous content
+            langBtn.innerHTML = '';
+
+            // Create a new image element for the button
+            const buttonFlag = document.createElement('img');
+            buttonFlag.classList.add('imgL'); // Apply the same styling
+            buttonFlag.src = flagImage.src;
+            buttonFlag.alt = flagImage.alt;
+            buttonFlag.style.marginRight = '5px'; // Add some spacing
+
+            // Append the flag and the text to the button
+            langBtn.appendChild(buttonFlag);
+            langBtn.appendChild(document.createTextNode(item.textContent + " ⌄"));
         });
 
         dropdowns.forEach(dropdown => {
@@ -71,7 +84,7 @@ function updateLanguage(lang) {
         }
     });
 }
-
+/* LANGUAGE SELECTOR */
 
     const translations = {
         uz: {
@@ -366,9 +379,9 @@ function updateLanguage(lang) {
             button1:"Больше информации",
             desc: "В школе Temurbek каждому ученику предоставляется индивидуальный подход к обучению. Наша цель — воспитать образованных, креативных и уверенных в себе молодых людей.",
             hero1_title: "Достигайте всего с нами",
-            hero1_desc: "Основан Темурбеком Шахобовым, опытным преподавателем...",
+            hero1_desc: "Учебный центр TEMURBEK SCHOOL был основан Темурбеком Шахобовым, преподавателем с более чем семилетним опытом преподавания. Темурбек Шахобов проводит уроки по общему английскому языку, CEFR, многоуровневым тестам, IELTS, TKT и ESOL. Под его руководством студенты постоянно достигают высоких результатов.",
             hero2_title: "Вдохновляющие результаты от нашего учителя",
-            hero2_desc: "Достигли уровня C1 по общему английскому и CEFR...",
+            hero2_desc: "Студенты достигли уровня C1 по Общему английскому языку и CEFR, а более 20 студентов получили баллы 7.0 и выше на IELTS. Примечательно, что Темурбек Шахобов является одним из первых международных преподавателей английского языка, который получил престижные уровни TKT Band 4 и C2, что дополнительно подтверждает его высокую квалификацию в преподавании.",
             hero3_title: "Достигайте всего с нами",
             hero3_desc: "Учебный центр TEMURBEK SCHOOL был основан Темурбеком Шахобовым, преподавателем с более чем семилетним опытом преподавания. Темурбек Шахобов проводит уроки по общему английскому языку, CEFR, многоуровневым тестам, IELTS, TKT и ESOL. Под его руководством студенты постоянно достигают высоких результатов.",
             more_info: "Подробнее",

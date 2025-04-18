@@ -23,7 +23,7 @@
 
 .language-selector button {
     background-color: transparent;
-    border: none;
+    border: 2px solid rgb(159, 84, 247);
     font-size: 16px;
     cursor: pointer;
     color: #333;
@@ -49,6 +49,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 25px;
 }
 
 .language-dropdown li:hover {
@@ -60,14 +61,14 @@
 }
 
 .current-lang {
-    border: 2px solid rgb(190, 133, 255);
+    z-index: 999;
     border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
 }
-
-.current-lang:hover {
-    background-color: rgb(190, 133, 255);
-}
-
 
 .section1 {
     background-image: url('imgs/background.png');
@@ -1089,6 +1090,11 @@ button {
 
 .why {
     padding-bottom: 20px;
+}
+
+.translate {
+    width: 40px;
+    height: 40px;
 }
 
 @media (max-width:850px) {
