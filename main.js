@@ -2,7 +2,6 @@ const faqs = document.querySelectorAll(".faq");
 const togglee = document.querySelectorAll(".toggle-answer");
 const img1 = document.querySelectorAll('.imgs'); // misol uchun
 
-
 faqs.forEach(faq => {
     faq.addEventListener("click", () => {
         faq.classList.toggle('active');
@@ -156,7 +155,14 @@ hamMenu.addEventListener('click', () => {
             faq_q5: "Malakali o'qituvchilar dars beradimi?",
             faq_a5: "Albatta, O'qituvchilar yo'nalishlari bo'yicha maxsus sertifikatga ega",
             faq_more_btn: "Ko'proq savollar",
-    
+            school:"Temurbek schoolda kelajagingiznibirgalikda quramiz",
+            customer:"Mijozlarni qo'llab-quvvatlash bizning ustuvor vazifamizdir.",
+            birga:"Temurbek School bilan doimo birga bo'ling",
+            biz:"Bizni yo'qotib qoymaslik uchun kanalimizga obuna bo'ling.",
+            bosh:"Bosh sahifa",
+            haqimizda:"Biz haqimizda",
+            kurses:"Kurslar",
+            contact:"Aloqa",
         },
         en: {
             home: "Home",
@@ -302,8 +308,15 @@ hamMenu.addEventListener('click', () => {
             faq_q5: "Malakali o'qituvchilar dars beradimi?",
             faq_a5: "Albatta, O'qituvchilar yo'nalishlari bo'yicha maxsus sertifikatga ega",
             faq_more_btn: "Ko'proq savollar",
-    
-        
+            school:"At Temurbek school Build your future together",
+            customer:"Customer support is our top priority. We're ready to answer all your questions.",
+            birga:"Stay connected with Temurbek School",
+            biz:"Stay updated — subscribe to our channel!",
+            bosh:"Main page",
+            haqimizda:"About us",
+            kurses:"Courses",
+            contact:"Contact",
+
         },
         ru: {
             home: "Главная",
@@ -432,7 +445,15 @@ hamMenu.addEventListener('click', () => {
             faq_q5: "Квалифицированные ли преподаватели?",
             faq_a5: "Конечно, преподаватели имеют специальные сертификаты по своим направлениям.",
             faq_more_btn: "Больше вопросов",
-    
+            school:"В школе Темурбека Стройте свое будущее вместе",
+            customer:"Поддержка клиентов — наш главный приоритет. Мы готовы ответить на все ваши вопросы.",
+            birga:"Оставайтесь на связи со школой Темурбек",
+            biz:"Не теряйте нас — подпишитесь на наш канал!",
+            bosh:"Главная",
+            haqimizda:"О нас",
+            kurses:"Курсы",
+            contact:"Контакты",
+
         }
     };
     

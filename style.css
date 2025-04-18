@@ -1083,6 +1083,12 @@ button {
     width: 260px;
 }
 
+.prezident {
+    color: white;
+}
+
+
+
 @media (max-width:850px) {
     .hamburger {
         width: 90vw;
@@ -1107,8 +1113,6 @@ button {
         gap: 30px;
     }
 }
-
-
 
 @media (max-width:1300px) {
     .links {
