@@ -1070,6 +1070,14 @@ button {
     align-items: center;
 }
 
+.nega {
+    width: 270px;
+}
+
+.nega2 {
+    width: 260px;
+}
+
 @media (max-width:850px) {
     .hamburger {
         width: 90vw;
