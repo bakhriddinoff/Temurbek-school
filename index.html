@@ -28,7 +28,7 @@
                 </nav>
                 <!-- Til tanlash qismi header ichida qo'shiladi -->
                 <div class="language-selector">
-                    <button id="current-lang">Tilni tanlash</button>
+                    <button class="current-lang">Tilni tanlash</button>
                     <ul class="language-dropdown hidden">
                         <li data-lang="uz"><img class="imgL" src="./imgs/uzb.jpg" alt="">O'zbekcha</li>
                         <li data-lang="en"><img class="imgL" src="./imgs/england.png" alt="">English</li>
@@ -41,14 +41,23 @@
 
             <div class="hamburger">   
                 <div class="off-screen-menu">
+                    <button class="current-lang">Tilni tanlash</button>
+                    <ul class="language-dropdown hidden">
+                        <li data-lang="uz"><img class="imgL" src="./imgs/uzb.jpg" alt="">O'zbekcha</li>
+                        <li data-lang="en"><img class="imgL" src="./imgs/england.png" alt="">English</li>
+                        <li data-lang="ru"><img class="imgL" src="imgs/russian.jpg" alt="">Русский</li>
+                    </ul>
                     <ul class="ham-menu-ul">
                         <li><a href="#home">Bosh sahifa</a></li>
             <!-- HAMBURGER -->
                         <li><a href="#about">Biz haqimizda</a></li>
                         <li><a href="kurslar.html">Kurslar</a></li>
                         <li><a href="#aloqa">Aloqa</a></li>
-
+                        <div class="language-selector">
+                        </div>
+        
                     </ul>
+                    
                 </div>
             
                 <nav class="nav-bar">
@@ -66,10 +75,10 @@
         </header>
 
         <div class="wrapper">
-            <h1>Bilimga kiritilgan sarmoya eng <br> yaxshi foydani beradi</h1>
-            <p class="text1">-Benjamin Franklin</p>
-            <p class="text2"><span class="name">Temurbek Schoolda</span> har bir o‘quvchi shaxsiy yondashuv asosida o‘qitiladi. Bizning maqsadimiz — bilimli, <br> ijodkor va o‘ziga ishongan yoshlarni tarbiyalash.</p>
-            <button class="btn btn2">Ro'yxatdan o'ting<img class="strelka" src="imgs/strelka.png" alt="strelka"> </button>    
+            <h1 data-i18n="quote">Bilimga kiritilgan sarmoya eng <br> yaxshi foydani beradi</h1>
+            <p class="text1" data-i18n="benjamin">-Benjamin Franklin</p>
+            <p class="text2" data-i18n="desc"><span class="name">Temurbek Schoolda</span> har bir o‘quvchi shaxsiy yondashuv asosida o‘qitiladi. Bizning maqsadimiz — bilimli, <br> ijodkor va o‘ziga ishongan yoshlarni tarbiyalash.</p>
+            <button data-i18n="yozuv" class="btn btn2">Ro'yxatdan o'ting<img class="strelka" src="imgs/strelka.png" alt="strelka"> </button>    
         </div>
     </div>
 
@@ -158,7 +167,7 @@
             </div>
         </div>
         <div class="headin">
-            <h2 data-i18n="why" class="heading2">Innovatsion Ta'lim Yondashuvi </h2>
+            <h2 data-i18n="why" class="heading2 why">Innovatsion Ta'lim Yondashuvi </h2>
         </div>
 
         <div class="cards-wrapper">

@@ -59,12 +59,12 @@
     display: none;
 }
 
-#current-lang {
+.current-lang {
     border: 2px solid rgb(190, 133, 255);
     border-radius: 5px;
 }
 
-#current-lang:hover {
+.current-lang:hover {
     background-color: rgb(190, 133, 255);
 }
 
@@ -462,7 +462,7 @@ h1 {
 }
 
 .cards-wrapper {
-    margin-top: 50px;
+    margin-top: 20px;
     display: flex;
     gap: 50px;
 }
@@ -1087,7 +1087,9 @@ button {
     color: white;
 }
 
-
+.why {
+    padding-bottom: 20px;
+}
 
 @media (max-width:850px) {
     .hamburger {
@@ -1220,6 +1222,9 @@ button {
     }
     .cards-wrapper {
         justify-content: center;
+    }
+    .kurslar1 {
+        gap: 10px;
     }
 
 }
@@ -1364,7 +1369,7 @@ button {
         width: 15px;
         height: 15px;
     }
-    .cards-wrapper {
+    .cards-wrapper, .kurslar1 {
         flex-wrap: wrap;    
         align-items: center;
         justify-content: center;
@@ -1506,9 +1511,6 @@ button {
     .section4 {
         padding-top: 80px;
     }
-    .shaxsiy {
-        margin-left: 20px;
-    }
     .footer1 {
         margin-bottom: 40px;
     }
@@ -1598,5 +1600,9 @@ button {
     .teachers {
         max-width: 300px;
         height: 270px;
+    }
+    .kurs-card {
+        width: 300px;
+        height: 220px;
     }
 }

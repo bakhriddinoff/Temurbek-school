@@ -35,9 +35,43 @@ hamMenu.addEventListener('click', () => {
 
 
 
-    const langBtn = document.getElementById('current-lang');
-    const dropdown = document.querySelector('.language-dropdown');
-    const items = document.querySelectorAll('.language-dropdown li');
+const langBtns = document.querySelectorAll('.current-lang');
+const dropdowns = document.querySelectorAll('.language-dropdown');
+const items = document.querySelectorAll('.language-dropdown li');
+
+// Har bir langBtn uchun event qo‘shamiz
+langBtns.forEach((langBtn, index) => {
+    langBtn.addEventListener('click', () => {
+        dropdowns[index].classList.toggle('hidden');
+    });
+});
+
+items.forEach(item => {
+    item.addEventListener('click', () => {
+        const selectedLang = item.getAttribute('data-lang');
+
+        // Faqat birinchi langBtn'ni yangilayapti, agar sizga kerak bo‘lsa barchasiga yangilasa, forEach qilib yozamiz
+        langBtns.forEach(langBtn => {
+            langBtn.textContent = item.textContent + " ⌄";
+        });
+
+        dropdowns.forEach(dropdown => {
+            dropdown.classList.add('hidden');
+        });
+
+        updateLanguage(selectedLang);
+    });
+});
+
+function updateLanguage(lang) {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+        const key = el.getAttribute('data-i18n');
+        if (translations[lang] && translations[lang][key]) {
+            el.textContent = translations[lang][key];
+        }
+    });
+}
+
 
     const translations = {
         uz: {
@@ -45,14 +79,16 @@ hamMenu.addEventListener('click', () => {
             about: "Biz haqimizda",
             courses: "Kurslar",
             contact: "Aloqa",
+            yozuv:"Ro'yxatdan o'ting",
+            button1:"Ko'proq ma'lumot",
             quote: "Bilimga kiritilgan sarmoya eng yaxshi foydani beradi",
-            desc: "Temurbek Schoolda har bir o‘quvchi shaxsiy yondashuv asosida o‘qitiladi...",
+            desc: "Temurbek Schoolda har bir o‘quvchi shaxsiy yondashuv asosida o‘qitiladi. Bizning maqsadimiz — bilimli, ijodkor va o‘ziga ishongan yoshlarni tarbiyalash.",
             hero1_title: "Biz bilan birga hammasiga erishing",
             hero1_desc: "TEMURBEK SCHOOL O'quv Markazi Temurbek Shaxobov tomonidan tashkil etilgan bo'lib, Temurbek Shakhobov yetti yildan ortiq ta'lim berish tajribasiga ega bo‘lgan o‘qituvchidir. Temurbek Shakhobov Umumiy Ingliz tili, CEFR, Multilevel testlar, IELTS, TKT va ESOL bo‘yicha dars berib keladi. Ustozning rahbarligi ostida talabalar doimiy ravishda yuqori natijalarga erishgan.",
             hero2_title: "Ustozimizdan ilhomlantiruvchi natijalar",
             hero2_desc: "Umumiy Ingliz tili va CEFR bo‘yicha C1 darajasiga erishdilar, shuningdek, 20dan ortiq talabalar 7.0 va undan yuqori IELTS ballarini olishgan. Diqqatga sazovor jihati shundaki, Temurbek Shaxobov xalqaro ingliz tili o'qituvchilari orasida nufuzli TKT Band 4 va C2 darajasini qo'lga kiritgan birinchi o'qituvchilardan biri hisoblanadilar, bu esa ustozning ta'limdagi yuqori malakalarinini tasdiqlaydi.",
             hero3_title: "Biz bilan birga hammasiga erishing",
-            hero3_desc: "O'quv markazi - bu Umumiy Ingliz tili, CEFR, TKT va IELTS bo‘yicha...",
+            hero3_desc: "TEMURBEK SCHOOL O'quv Markazi - bu Umumiy Ingliz tili, CEFR, TKT va IELTS bo‘yicha ta’lim berishga ixtisoslashgan ta’lim markazi. Kurslar yuqori malakali o‘qituvchilar tomonidan olib boriladi va talabalarining muloqot qilish ko‘nikmalarini oshirishga alohida e’tibor qaratiladi. Talabalar darajasini aniqroq baholash va ularning rivojlanishini kuzatib borish uchun har uch oyda bir marta darajani baholash imtihonlari o‘tkaziladi.",
             more_info: "Ko'proq ma'lumot",
             stats_text: "300 + Sertifikatli o'quvchilar",
             haqimizda: "Biz haqimizda",
@@ -169,14 +205,15 @@ hamMenu.addEventListener('click', () => {
             about: "About Us",
             courses: "Courses",
             contact: "Contact",
+            yozuv:"Register now",
             quote: "An investment in knowledge pays the best interest",
-            desc: "At Temurbek School, each student is taught individually with a personal approach...",
+            desc: "At Temurbek School, each student receives a personalized approach to education. Our goal is to nurture knowledgeable, creative, and confident young individuals.",
             hero1_title: "Achieve everything with us",
             hero1_desc: "TEMURBEK SCHOOL Learning Center was founded by Temurbek Shakhobov, who is a teacher with more than seven years of teaching experience. Temurbek Shakhobov teaches General English, CEFR, Multilevel tests, IELTS, TKT and ESOL. Under his guidance the students achieved consistently high results.",
             hero2_title: "Inspiring results from our teacher",
             hero2_desc: "They have achieved a C1 level in General English and CEFR and over 20 students have achieved IELTS scores of 7.0 or above. It is noteworthy that Temurbek Shakhobov is considered one of the first international English language teachers to have received the prestigious TKT Band 4 and C2 levels, which confirms the teacher's high educational qualifications.s",
             hero3_title: "Achieve everything with us",
-            hero3_desc: "TEMURBEK SCHOOL O'quv Markazi - bu Umumiy Ingliz tili, CEFR, TKT va IELTS bo‘yicha ta’lim berishga ixtisoslashgan ta’lim markazi. Kurslar yuqori malakali o‘qituvchilar tomonidan olib boriladi va talabalarining muloqot qilish ko‘nikmalarini oshirishga alohida e’tibor qaratiladi. Talabalar darajasini aniqroq baholash va ularning rivojlanishini kuzatib borish uchun har uch oyda bir marta darajani baholash imtihonlari o‘tkaziladi.",
+            hero3_desc: "Temurbek School Educational Center was founded by Temurbek Shakhobov, a teacher with over seven years of experience in teaching. Temurbek Shakhobov has been teaching General English, CEFR, Multilevel tests, IELTS, TKT, and ESOL. Under his guidance, students consistently achieve high results.",
             more_info: "Learn more",
             stats_text: "300+ Certified Students",
             button1: "More info",
@@ -324,13 +361,16 @@ hamMenu.addEventListener('click', () => {
             courses: "Курсы",
             contact: "Контакты",
             quote: "Инвестиции в знания приносят наилучшие дивиденды",
-            desc: "В Temurbek School каждый ученик обучается индивидуально по личному подходу...",
+            benjamin:"Бенджамин Франклин",
+            yozuv:"Регистрация",
+            button1:"Больше информации",
+            desc: "В школе Temurbek каждому ученику предоставляется индивидуальный подход к обучению. Наша цель — воспитать образованных, креативных и уверенных в себе молодых людей.",
             hero1_title: "Достигайте всего с нами",
             hero1_desc: "Основан Темурбеком Шахобовым, опытным преподавателем...",
             hero2_title: "Вдохновляющие результаты от нашего учителя",
             hero2_desc: "Достигли уровня C1 по общему английскому и CEFR...",
             hero3_title: "Достигайте всего с нами",
-            hero3_desc: "Учебный центр специализируется на General English, CEFR, TKT и IELTS...",
+            hero3_desc: "Учебный центр TEMURBEK SCHOOL был основан Темурбеком Шахобовым, преподавателем с более чем семилетним опытом преподавания. Темурбек Шахобов проводит уроки по общему английскому языку, CEFR, многоуровневым тестам, IELTS, TKT и ESOL. Под его руководством студенты постоянно достигают высоких результатов.",
             more_info: "Подробнее",
             sertifikat: "300+ Сертифицированных студентов",
             us:"Почему именно мы?",
@@ -455,26 +495,4 @@ hamMenu.addEventListener('click', () => {
             contact:"Контакты",
 
         }
-    };
-    
-    langBtn.addEventListener('click', () => {
-        dropdown.classList.toggle('hidden');
-    });
-
-    items.forEach(item => {
-        item.addEventListener('click', () => {
-            const selectedLang = item.getAttribute('data-lang');
-            langBtn.textContent = item.textContent + " ⌄";
-            dropdown.classList.add('hidden');
-            updateLanguage(selectedLang);
-        });
-    });
-
-    function updateLanguage(lang) {
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.getAttribute('data-i18n');
-            if (translations[lang][key]) {
-                el.textContent = translations[lang][key];
-            }
-        });
-    }    
+    }
