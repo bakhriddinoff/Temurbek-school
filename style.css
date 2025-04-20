@@ -6,6 +6,11 @@
     scroll-behavior: smooth;
 }
 
+header, .hamburger {
+    justify-self: center;
+    align-self: center;
+}
+
 /* LANGUAGE SELECTOR */
 
 
@@ -1054,6 +1059,7 @@ button {
 .ham-menu-ul li > a {
     color: rgb(159, 84, 247);
     text-transform: capitalize;
+    text-decoration: none;
     font-size: 22px;
 
 }
@@ -1106,7 +1112,6 @@ button {
         background-color: white;
         border-radius: 20px;
         align-items: center;
-        
     }
 
     nav, .header-wrapper {
@@ -1521,6 +1526,9 @@ button {
     .footer1 {
         margin-bottom: 40px;
     }
+    .hamburger {
+        width: 90vw;
+    }
 }
 
 @media (max-width: 500px) {
@@ -1611,5 +1619,11 @@ button {
     .kurs-card {
         width: 300px;
         height: 220px;
+    }
+}
+
+@media (max-width: 470px) { 
+    .hamburger {
+        width: 82vw;
     }
 }
