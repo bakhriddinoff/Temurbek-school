@@ -1105,6 +1105,15 @@ button {
     height: 40px;
 }
 
+.subject {
+    color: black;
+}
+.textk {
+    color: #939191;
+    font-weight: 500;
+}
+
+
 @media (max-width:850px) {
     .hamburger {
         width: 90vw;
