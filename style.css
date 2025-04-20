@@ -637,7 +637,7 @@ h1 {
 
 .kurs-card {
     width: 400px;
-    height: 250px;
+    height: 226px;
     border: 2px solid rgb(159, 84, 247);
     border-radius: 10px;
     position: relative;
@@ -1107,10 +1107,32 @@ button {
 
 .subject {
     color: black;
+    padding-top: 15px;
+    padding-left: 15px;
 }
 .textk {
+    padding-left: 15px;
     color: #939191;
     font-weight: 500;
+}
+
+.imgk-wrapper {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #c899fe;
+    border-radius: 20px;
+    top: -15px;
+    left: 10px;
+}
+
+.imgk {
+    position: absolute;
+    width: 25px;
+    height: 25px;
 }
 
 
