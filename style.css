@@ -1511,6 +1511,12 @@ button {
 }
 
 @media (max-width: 600px) {
+    .hamburger {
+        width: 90vw;
+    }
+    header {
+        left: 18px;
+    }
     h1 {
         font-size: 25px;
     }
@@ -1625,9 +1631,6 @@ button {
     }
     .headingg {
         padding-top: 30px;
-    }
-    .hamburger {
-        width: 82vw;
     }
     .num {
         font-size: 25px;
