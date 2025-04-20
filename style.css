@@ -76,6 +76,7 @@ header, .hamburger {
     height: 50px;
 }
 
+/* SECTION1 */
 .section1 {
     background-image: url('imgs/background.png');
     background-size: cover;
@@ -250,7 +251,7 @@ h1 {
 
 .section2 {
     padding-top: 50px;
-    background: linear-gradient(rgb(250, 247, 255), white);
+    background: linear-gradient(rgb(250, 249, 252), white);
 }
 
 .heroes {
@@ -744,7 +745,6 @@ h1 {
 .question h3 {
     font-size: 1.8rem;
     font-weight: normal;
-    color: white;
 }
 
 .toggle-answer {
@@ -787,10 +787,11 @@ h1 {
 }
 
 .question h3 {
-    color: gray;
+    color: rgb(106, 105, 105);
     padding-left: 30px;
     padding-top: 10px;
     font-size: 25px;
+    font-weight: 500;
 }
 
 .spn11 {
@@ -1386,6 +1387,9 @@ button {
         align-items: center;
         justify-content: center;
     }
+    .section2 {
+        background: linear-gradient(rgb(255, 255, 255), white);
+    }
 
 }
 
@@ -1552,9 +1556,6 @@ button {
     .toggle-answer {
         font-size: 14px;
     }
-    .section7 {
-        margin-top: 100px;
-    }
     .text5 {
         text-align: center;
     }
@@ -1585,15 +1586,64 @@ button {
         width: 20px;
         height: 20px;
     }
+    .heading2 {
+        padding-top: 30px;
+    }
+    .horizontal-scroll-container {
+        margin-top: 0px;
+    }
+    .headingg {
+        padding-top: 30px;
+    }
+    .hamburger {
+        width: 82vw;
+    }
+    .num {
+        font-size: 25px;
+    }
+    .text1 {
+        font-size: 13px;
+        padding-right: 5px;
+    }
+    .text2, .text3, .text5, .name, .textC {
+        font-size: 13px;
+        color: gray;
+    }
+    .content p {
+        font-size: 13px;
+    }
+    .kurslar1 {
+        padding-top: 10px;
+    }
+    .kurs-card {
+        width: 300px;
+        height:auto;
+    }
+    .spn1F {
+        font-size: 20px;
+    }
+    .cards-item {
+        height: auto;
+    }
+    .headingC {
+        padding-top: 10px;
+    }
+    .textC {
+        padding-bottom: 10px;
+    }
+    .apps {
+        width: 25px;
+        height: 25px;
+    }
+    .name {
+        color: rgb(159, 84, 247);
+    }
+
 }
 
 @media (max-width: 470px) { 
     .copyrightt {
         font-size: 8px;
-    }
-    .apps {
-        width: 20px;
-        height: 20px;
     }
     .logo {
         width: 50px;
@@ -1615,34 +1665,5 @@ button {
     .teachers {
         max-width: 300px;
         height: 270px;
-    }
-    .kurs-card {
-        width: 300px;
-        height: 220px;
-    }
-}
-
-@media (max-width: 470px) { 
-    .hamburger {
-        width: 82vw;
-    }
-    .num {
-        font-size: 25px;
-    }
-    .text1 {
-        font-size: 12px;
-        padding-right: 5px;
-    }
-    .text2, .name, .textC {
-        font-size: 12px;
-    }
-    .content p {
-        font-size: 12px;
-    }
-    .kurslar1 {
-        padding-top: 10px;
-    }
-    .kurs-card {
-        height:auto;
     }
 }
