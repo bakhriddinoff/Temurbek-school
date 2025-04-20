@@ -509,3 +509,23 @@ function updateLanguage(lang) {
 
         }
     }
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const elements = document.querySelectorAll(".zoom-element");
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("zoom-in");
+                observer.unobserve(entry.target); // Stop observing once the animation has played
+            }
+        });
+    }, { threshold: 0.5 }); // Adjust threshold as needed (0.5 means the element must be 50% visible)
+
+    elements.forEach(element => {
+        observer.observe(element);
+    });
+});
+
+    

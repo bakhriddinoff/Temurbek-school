@@ -637,7 +637,7 @@ h1 {
 
 .kurs-card {
     width: 400px;
-    height: 226px;
+    height: 236px;
     border: 2px solid rgb(159, 84, 247);
     border-radius: 10px;
     position: relative;
@@ -1107,7 +1107,7 @@ button {
 
 .subject {
     color: black;
-    padding-top: 15px;
+    padding-top: 20px;
     padding-left: 15px;
 }
 .textk {
@@ -1134,6 +1134,74 @@ button {
     width: 25px;
     height: 25px;
 }
+
+
+.kurs-card {
+    position: relative;
+    border-radius: 10px;
+    z-index: 1;
+}
+  
+.kurs-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    border-radius: inherit;
+    padding: 2px;
+    background: linear-gradient(90deg,black, cyan, blue, blueviolet, red);
+    background-size: 300%;
+    animation: rotateBorder 4s linear infinite;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    z-index: -1;
+}  
+@keyframes rotateBorder {
+    0% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 100% 50%;
+    }
+}
+
+.spn1 {
+  font-size: 32px;
+  font-weight: bold;
+  background: linear-gradient(90deg, blueviolet, violet,gray);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: rainbow 3s linear infinite;
+}
+
+@keyframes rainbow {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+
+@keyframes zoomIn {
+    0% {
+        transform: translateY(30px) scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+}
+
+.zoom-in {
+    animation: zoomIn 0.6s ease-out forwards;
+}
+  
 
 
 @media (max-width:850px) {
@@ -1268,7 +1336,7 @@ button {
         justify-content: center;
     }
     .kurslar1 {
-        gap: 10px;
+        gap: 20px;
     }
 
 }
@@ -1380,11 +1448,11 @@ button {
         height: 70px;
     }
     .img1 {
-        width: 30px;
-        height: 30px;
+        width: 50px;
+        height: 50px;
     }
     .insta {
-        width: 40px;
+        width: 65px;
     }
     .logoN, .address {
         font-size: 1rem;
@@ -1508,6 +1576,10 @@ button {
     .text5 {
         text-align: center;
     }
+    .img1 {
+        width: 60px;
+        height: 60px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1569,6 +1641,20 @@ button {
     }
     .hamburger {
         width: 90vw;
+    }
+    .img1 {
+        width: 35px;
+        height: 35px;
+    }
+    .insta {
+        width: 45px;
+    }
+    .logo-item {
+        width: 55px;
+        height: 55px;
+    }
+    .address {
+        font-size: 12px;
     }
 }
 
@@ -1647,7 +1733,7 @@ button {
         font-size: 13px;
     }
     .kurslar1 {
-        padding-top: 10px;
+        padding-top: 20px;
     }
     .kurs-card {
         width: 300px;
